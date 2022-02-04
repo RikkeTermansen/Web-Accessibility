@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+body {
+    background-color: #EDEFF1;
+}
+
+/* Header */
+header img {
+    height: 30px
+}
+header nav {
+    display: flex;
+    margin: 30px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+/* Main */
+article,
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.spisepinde {
+    max-height: 425px;
+    margin-top: 200px;
+}
+h1 {
+    font-size: 25px;
+    color: #0C1D85;
+    margin: 10px;
+    font-weight: 500;
+}
+.pil {
+    max-height: 30px;
+    margin-top: 120px;
+}
+h2 {
+    font-size: 20px;
+    color: #0C1D85;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+p {
+    color: #0C1D85;
+    font-size: 12px;
+}
+.guide {
+    max-height: 700px;
+}
+ol {
+    color: #0C1D85;
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    margin-bottom: 100px;
+    padding: 40px;
+}
+li {
+    counter-increment: my-awesome-counter;
+    font-size: 13px;
+    padding-left: 1.3em;
+    padding-bottom: 15px;
+}
+ol li:before {
+    content: counter(my-awesome-counter);
+    font-size: 15px;
+    font-weight: bolder;
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.3em;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+h3 {
+    color: #0C1D85;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 80px;
+}
+.sushi {
+    max-height: 250px;
+    margin-top: 15px;
+}
+.tiltop {
+    color: #EDEFF1;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #0C1D85;
+    border-radius: 100px;
+    padding: 25px;
+    width: 120px;
+    height: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Desktop */
+@media screen and (min-width: 700px) {
+    header img {
+        height: 40px
+    }
+    .spisepinde {
+        margin-top: 100px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .pil {
+        margin: 50px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 15px;
+    }
+    ol {
+        margin-bottom: 220px;
+    }
+    li {
+        font-size: 16px;
+    }
+    ol li::before {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 60px;
+        margin-top: 100px;
+    }
+    .sushi {
+        max-height: 550px;
+    }
+    .tiltop {
+        font-size: 20px;
+        padding: 30px;
+        width: 150px;
+        margin-top: 20px;
+    }
+}
